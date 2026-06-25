@@ -1,12 +1,22 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/main.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/main.css" />
     <title>Puzzle roulette</title>
-</head>
-<body>
+  </head>
+  <body>
+    <h1>Puzzle Roulette</h1>
+
+    <div id="game-container">
+      <canvas id="main-canvas" width="600" height="430"></canvas>
+
+      <canvas id="left-wheel-canvas" width="150" height="180"></canvas>
+      <canvas id="next-piece-canvas" width="230" height="180"></canvas>
+      <canvas id="right-wheel-canvas" width="150" height="180"></canvas>
+    </div>
+
     <script src="./js/main.js"></script>
-</body>
+  </body>
 </html>
