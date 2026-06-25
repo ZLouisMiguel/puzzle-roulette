@@ -1,0 +1,67 @@
+:root {
+  --bg: #a4c7f3;
+  --text-1: #f3fafc;
+  --text-2: #0f0f0f;
+  --font: monospace;
+  --arcade-box: #1e1e2e;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--bg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  font-family: var(--font);
+}
+
+h1 {
+  color: var(--text-2);
+  margin-bottom: 20px;
+}
+
+#game-container {
+  height: 650px;
+  width: 600px;
+  display: grid;
+  grid-template-columns: 30% 40% 30%;
+  grid-template-rows: 70% 30%;
+  gap: 10px;
+  padding: 10px;
+  border: 3px solid var(--text-2);
+  background-color: var(--arcade-box);
+  border-radius: 4px;
+}
+
+canvas {
+  background-color: #11111b;
+  border: 2px solid var(--text-2);
+  box-sizing: border-box;
+}
+
+canvas#main-canvas {
+  grid-column: 1 / span 3;
+  grid-row: 1;
+  border-color: greenyellow;
+}
+
+canvas#left-wheel-canvas {
+    grid-column: 1;
+    grid-row: 2;
+    border-color: #f3fafc;
+}
+
+canvas#next-piece-canvas {
+    grid-column: 2;
+    grid-row: 2;
+    border-color: rosybrown;
+}
+
+canvas#right-wheel-canvas {
+    grid-column: 3;
+    grid-row: 2;
+    border-color: #f3fafc;
+}
